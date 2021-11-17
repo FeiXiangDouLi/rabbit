@@ -1,0 +1,20 @@
+server:
+  port: 7676
+spring:
+  application:
+    name: rabbit-demo
+  rabbitmq:
+    host: 182.43.172.163
+    port: 5672
+    password: guest
+    username: guest
+    #    publisher-confirms: true
+    #    publisher-returns: false
+    #    cache:
+    #      channel:
+    #        size: 100
+    #        checkout-timeout: 3000
+    listener:
+      type: simple
+      simple:
+        acknowledge-mode: auto
